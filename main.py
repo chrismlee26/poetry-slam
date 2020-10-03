@@ -1,39 +1,78 @@
-# You will store your poem in a .txt file. Feel free to use any poem of your choice!
-
-# Create a function called get_file_lines():
-
-# It should have 1 parameter called filename, which is a string of the filename.
-# It should return a list of strings containing the lines of the file.
-# Create a function called lines_printed_backwards():
-# It should have 1 parameter called lines_list, which is a list of strings containing lines of your poem.
-
-
-
+# Simmpliest solution for #1. Variable into open. for loop to read. print with no spaces. program closes. 
 def get_file_lines(filename):
     file_lines = open(filename, "r")
     for x in file_lines:
-        print(x)
+        print(x, end="")
+        file_lines.close
 
 get_file_lines("poem.txt")
 
+
+#First Question (Regular order):
+# def get_file_lines(filename):
+#     with open(filename, "r") as read_obj:
+#         lines = read_obj.readlines()
+#         return lines
+
+# filename = get_file_lines("poem.txt")
+
+# for line in filename:
+#     print(line, end="")
+
+# \
+
+#Second Question (Backwards):
 #It should print the lines of the poem in reverse. Include the original line number at the beginning of each line.
 
-def lines_printed_backwards(lines_list):
-    with open(lines_list, "r") as read_obj:
-        lines = read_obj.readlines()
-        lines = [line.strip() for line in lines]
-        lines = reversed(lines)
-        return lines
+# def lines_printed_backwards(lines_list):
+#     with open(lines_list, "r") as read_obj:
+#         lines = read_obj.readlines()
+#         lines = [line.strip() for line in lines]
+#         lines = reversed(lines)
+#         return lines
+#         lines.close
 
-lines_backwards = lines_printed_backwards("poem.txt")
+# lines_backwards = lines_printed_backwards("poem.txt")
 
-for line in lines_backwards:
-    print(line)
+# for line in lines_backwards:
+#     print(line)
 
+# \
 
-# lines_printed_backwards("poem.txt")
+#Third Question (Random):
+# def lines_printed_random(lines_list):
 
 # def lines_printed_random(lines_list):
+#     with open(lines_list, "r") as read_obj:
+#         lines = read_obj.readlines()
+#         lines = [line.strip() for line in lines]
+#         lines = reversed(lines)
+#         return lines
+#         lines.close
+
+# lines_random = lines_printed_random("poem.txt")
+
+# for line in lines_random:
+#     print(line)
+
+# import random
+# random_lines = random.choice(open("poem.txt").readlines())
+# print(random_lines)
+
+# import random
+
+# def lines_printed_backwards(lines_list):
+#     with open(lines_list, "r") as read_obj:
+#         lines = read_obj.readlines()
+#         lines = [line.strip() for line in lines]
+#         lines = random.shuffle(lines)
+#         return lines
+#         lines.close
+
+# lines_backwards = lines_printed_backwards("poem.txt")
+
+# for line in lines_backwards:
+#     print(line)
 
 
 
