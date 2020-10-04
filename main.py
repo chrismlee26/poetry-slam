@@ -62,4 +62,5 @@ def lines_printed_custom(lines_list):
     f.close()
     with open(lines_list, "r") as f:
         print(f.readline(16))
+        
 lines_printed_custom("poem.txt")
