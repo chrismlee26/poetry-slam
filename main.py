@@ -50,9 +50,9 @@ for line in lines_random:
     print(line)
 
 
-\
+
 print('**Poem #4 Custom Haiku**')
-\
+
 
 
 def lines_printed_custom(lines_list):
