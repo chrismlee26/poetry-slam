@@ -1,3 +1,5 @@
+print('**Poem #1 Original Order**')
+
 def get_file_lines(filename):
     file_lines = open(filename, "r")
     for x in file_lines:
@@ -7,9 +9,9 @@ def get_file_lines(filename):
 get_file_lines("poem.txt")
 
 
-\
-print('**break**')
-\
+
+print('**Poem #2 Backwards**')
+
 
 
 def lines_printed_backwards(lines_list):
@@ -26,9 +28,9 @@ def lines_printed_backwards(lines_list):
 lines_printed_backwards("poem.txt")
 
 
-\
-print('**break**')
-\
+
+print('**Poem #3 Random**')
+
 
 
 import random
@@ -49,7 +51,7 @@ for line in lines_random:
 
 
 \
-print('**break**')
+print('**Poem #4 Custom Haiku**')
 \
 
 
